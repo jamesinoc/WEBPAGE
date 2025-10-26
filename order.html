@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+      <div class="sidebar">
+    <div class="logo">
+      <img src="/images/RYKZ MOTOCARE.png" alt="Logo">
+    </div>
+    <div class="menu">
+      <a href="./inde.html" class="menu-item"> Dashboard</a>
+      <a href="./customer.html" class="menu-item"> Customer</a>
+      <a href="./product.html" class="menu-item"> Products</a>
+      <a href="#" class="menu-item active"> Order</a>
+      <a href="./report.html" class="menu-item"> Reports</a>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <div class="header">
+      <h1>Order List</h1>
+      <div class="search-container">
+        <div class="search-bar"> <input type="text" placeholder="search Product" /></div>
+        <button class="filter-btn">⬇</button>
+        <button class="filter-btn">⬇</button>
+        <div class="user-icon">👤</div>
+      </div>
+    </div>
+
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Order Id</th>
+            <th>Customer</th>
+            <th>Date</th>
+            <th>Status</th>
+            <th>Total</th>
+            <th>Detail</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>01</td>
+            <td>Thomas</td>
+            <td>08-05-2025</td>
+            <td><span class="status pending">Pending</span></td>
+            <td>690</td>
+            <td><button class="detail-btn">💳</button></td>
+          </tr>
+          <tr>
+            <td>02</td>
+            <td>Taneo</td>
+            <td>09-05-2025</td>
+            <td><span class="status delivered">Deliverd</span></td>
+            <td>670</td>
+            <td><button class="detail-btn">💳</button></td>
+          </tr>
+          <tr>
+            <td>03</td>
+            <td>Alohakbar</td>
+            <td>02-05-2025</td>
+            <td><span class="status canceled">Canceled</span></td>
+            <td>150</td>
+            <td><button class="detail-btn">💳</button></td>
+          </tr>
+          <tr>
+            <td>04</td>
+            <td>Bogart</td>
+            <td>04-05-2025</td>
+            <td><span class="status pending">Pending</span></td>
+            <td>200</td>
+            <td><button class="detail-btn">💳</button></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <button class="new-order">New Order</button>
+    </div>
+  </div>
+</body>
+</html>

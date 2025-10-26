@@ -1,0 +1,186 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      display: flex;
+      background: #2f3c45;
+      color: #fff;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 240px;
+      background: #111821;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 0;
+    }
+
+   .logo {
+  background: #e6e3cf;
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* makes sure image stays inside the circle */
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* keeps full image visible */
+}
+
+    .menu {
+      width: 100%;
+    }
+
+    .menu-item {
+      display: flex;
+      align-items: center;
+      padding: 12px 30px;
+      color: #d8d8d8;
+      text-decoration: none;
+      transition: 0.3s;
+      font-weight: 500;
+    }
+
+    .menu-item.active {
+      background: #ffeb3b;
+      color: #111821;
+      border-radius: 6px;
+      margin: 5px 20px;
+    }
+
+    .menu-item:hover {
+      background: #2a3640;
+    }
+
+    .menu-item i {
+      margin-right: 10px;
+    }
+
+    /* Main Dashboard */
+    .main {
+      flex: 1;
+      padding: 40px;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .header h1 {
+      font-size: 2rem;
+    }
+
+    .search-bar {
+      display: flex;
+      align-items: center;
+      background: #222c33;
+      padding: 10px 15px;
+      border-radius: 25px;
+    }
+
+    .search-bar input {
+      background: transparent;
+      border: none;
+      color: #fff;
+      margin-left: 10px;
+      outline: none;
+    }
+
+    .user-icon {
+      background: #222c33;
+      border-radius: 50%;
+      padding: 10px;
+      margin-left: 15px;
+    }
+
+    /* Dashboard Cards */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #1f2a30;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .card .value {
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+
+    .card small {
+      color: #6cf78c;
+    }
+
+    .top-product img,
+    .stock img {
+      width: 50px;
+      margin-bottom: 10px;
+    }
+
+    .overview {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 150px;
+      background: #222c33;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    .chart-bar {
+      height: 80px;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-end;
+    }
+
+    .bar {
+      width: 20px;
+      background: #f9c100;
+      border-radius: 4px;
+    }
+
+    .bar:nth-child(1) { height: 40px; }
+    .bar:nth-child(2) { height: 70px; }
+    .bar:nth-child(3) { height: 50px; }
+    .bar:nth-child(4) { height: 80px; }
+    .bar:nth-child(5) { height: 60px; }
+    .bar:nth-child(6) { height: 30px; }
+
+    .circle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: conic-gradient(#f9c100 0% 69%, #3b4b52 69%);
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      margin: 0 auto;
+      font-size: 1.2rem;
+    }
